@@ -1,0 +1,1 @@
+For security reasons an active registration is currently required to interact with the console. Use /register (/help register) to create one and then pester Zekka to uprank you.

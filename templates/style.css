@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'FixedsysExcelsior301Regular';
+    src: url({{ url_for("static", filename="fonts/fsex300-webfont.eot") }});
+    src: url({{ url_for("static", filename="fonts/fsex300-webfont.eot?#iefix") }}) format('embedded-opentype'),
+         url({{ url_for("static", filename="fonts/fsex300-webfont.woff") }}) format('woff'),
+         url({{ url_for("static", filename="fonts/fsex300-webfont.ttf") }}) format('truetype'),
+         url({{ url_for("static", filename="fonts/fsex300-webfont.svg#FixedsysExcelsior301Regular") }}) format('svg');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing:aliased;
+    font-smooth: never;
+}
+body {
+    background-color: #ffffff;
+}
+*:focus {
+    outline: none;
+}
+
+.chatLabel {
+    padding-top: 2px;
+    float: left;
+    color: #808080;
+    font-weight: bold;
+    font: 12pt monospace;
+}
+
+.centered {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#chatPaneRegion {
+    background-color: #ffffff;
+}
+
+.console {
+    display: block;
+    /*
+     * padding-left: 0;
+     * padding-right: 0;
+     */
+    padding: 2px;
+    border: 1px #ffffff solid;
+    margin: 2px;
+}
+
+.console:focus {
+    border-bottom-color: #ff0000;
+    border-width: 2px;
+    margin: 1px;
+}
+
+.consoleBorder {
+    display: block;
+    padding:2px;
+    margin: 0px;
+    border: 1px #d0d0d0 solid;
+}
+
+#consoleRegion {
+    margin-bottom: 6px;
+    display: inline-block;
+
+}
+
+.chatInput{
+    width: 100%;
+    /* border: 1px #d0d0d0 solid;*/
+    border: none;
+    font: 12pt monospace;
+}
+
+.chatInput:focus {
+    border-bottom: 2px #e0d0d0;
+}
+
+.chatInputSpan {
+    display: block;
+    overflow: hidden;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.chatOutput {
+    width: 100%;
+    font: 12pt monospace;
+    border-collapse: collapse;
+}
+.chatOutput tr{
+    margin: 0px;
+    padding: 0px;
+}
+
+.chatDiv {
+   border-top: 1px #d0d0d0 solid;
+   border-bottom: 1px #d0d0d0 solid;
+   padding-bottom: 4px;
+   overflow-y: scroll;
+}
+
+.senderCell {
+    width: 20%;
+    font-weight: bold;
+    border-right: 1px #e0e0e0 solid;
+    text-align: right;
+    padding-right: 12px;
+}
+.messageCell {
+    padding-left: 16px;
+}
+
